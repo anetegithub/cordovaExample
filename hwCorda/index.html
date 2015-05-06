@@ -6,29 +6,48 @@
 
     <!-- hwCorda references -->
     <link href="css/index.css" rel="stylesheet" />
-    <!--<link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/bootstrap-theme.css" rel="stylesheet" />-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">-->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <style>
-        .v-center {
-            display: table !important;
-        }
-    </style>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/full.css" rel="stylesheet" />
+    <link href="Content/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/panel-transparent.css" rel="stylesheet" />
 </head>
-<body>
-    <nav class="navbar navbar-default">
+<body class="full">
+        <div class="row " style="margin-top:50%">
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="panel panel-success">
+                    <div class="panel-heading text-center">
+                        <strong>Hexagonia</strong>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" class="text-center">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-street-view"></i></span>
+                                <input type="text" id="log" class="form-control" placeholder="Email " />
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" id="psw" class="form-control" placeholder="Password" />
+                            </div>
+                            <a id="log-btn" class="btn btn-success  form-control">Send</a>
+                            <!--Not register ? <a href="registeration.html" >click here </a> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--<nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header text-center">
                 <h3><strong>Main</strong></h3>
             </div>
         </div>
-    </nav>
+    </nav>-->
 
-    <img src="images/Tiles/alienGreen.png" />
+    <!--<img src="images/Tiles/alienGreen.png" />
     <br />
-    <label>x: </label> <input type="text" id="x" />
+    <label>x: </label> <input class="form-control" type="text" id="x" />
     <br />
     <label>y: </label> <input type="text" id="y" />
     <br />
@@ -37,26 +56,27 @@
     <input type="button" value="Draw" onclick="
     var x = $('#x').val(),
         y = $('#y').val(),
-        tileid = $('#tileid').val();    
+        tileid = $('#tileid').val();
     loc.draw(tileid, x, y);
+    
     " />
+    <img src="" id="someimg"/>
     <canvas id='map'></canvas>
     <p>Hello, your application is ready!</p>
     
     <footer>
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="row">
-                <div class="col-xs-4 text-center" style="vertical-align:central;"><i class="icon-2x icon-home"></i></div>
+                <div class="col-xs-4 text-center"><i class="icon-2x icon-home"></i></div>
                 <div class="col-xs-4 text-center"><i class="icon-2x icon-star"></i></div>
                 <div class="col-xs-4 text-center"><i class="icon-2x icon-cog"></i></div>
             </div>
         </div>
-    </footer>
+    </footer>-->
    
     <script src="scripts/jquery-1.9.1.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!--<script src="scripts/jquery.mobile-1.4.5.js"></script>-->
-    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="scripts/bootstrap.js"></script>
+
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
 
